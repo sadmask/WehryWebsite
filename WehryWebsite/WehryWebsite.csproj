@@ -245,6 +245,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\img\black_and_white_portraits_007.jpg" />
+    <Content Include="Content\img\fampic1.jpg" />
+    <Content Include="Content\img\fampic2.jpg" />
+    <Content Include="Content\img\fampic3.jpg" />
+    <Content Include="Content\img\fampic4.jpg" />
+    <Content Include="Content\img\fampic5.jpg" />
     <Content Include="Content\img\Geeks.jpg" />
     <Content Include="Content\img\hamwhite.png" />
     <Content Include="Content\img\menu.png" />
