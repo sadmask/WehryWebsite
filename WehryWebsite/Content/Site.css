@@ -3,6 +3,7 @@
     - Navbar
     - Content
     - Contact
+    - Modal
     - Mobile
 
 */
@@ -29,7 +30,7 @@ body {
 a {
     text-decoration: none;
     color: lightgoldenrodyellow;
-    font: 16px 'Asar', serif;
+    font: 20px 'Asar', serif;
 }
 
 footer {
@@ -58,7 +59,7 @@ h2 {
 }
 
 p {
-    font: 16px 'Asar', serif;
+    font: 18px 'Asar', serif;
 }
 
 .UnderConstruction {
@@ -95,6 +96,7 @@ p {
     display: block;
     text-align: center;
     padding: 14px 16px;
+    font: 16px 'Asar', serif;
 }
 
 #login {
@@ -109,14 +111,14 @@ p {
 /*  Content  */
 
 .content-top {
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
 }
 
 .hero {
     background-image: url("img/Geeks.jpg");
     background-size: cover;
     height: 20rem;
-    width: 96.5%;
+    width: 96%;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -145,10 +147,39 @@ p {
     color: white;
 }
 
+.resume-box {
+    background-color: rgb(161, 40, 48);
+    box-sizing: border-box;
+    width: 70%;
+    display: inline-block;
+    padding: 12px;
+    margin: 15%;
+    margin-top: 4.5rem;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border-color: cornsilk;
+    color: white;
+}
+
+.resume-title {
+    font-size: 48px;
+}
+
+.resume-box li {
+    margin-left: 20px;
+}
+
 .box h1, h2 {
     margin: 0;
     padding: 4px;
     text-align:center;
+}
+
+.box li {
+    list-style: square;
+    margin-left: 20px;
+    font: 18px 'Asar', serif;
+    font-size: 16px;
 }
 
 .profile-pic {
@@ -159,7 +190,24 @@ p {
     margin-top: 0px;
     margin: 4px;
     padding: 4px;
-    /*filter: grayscale(100%);*/
+    overflow:auto;
+}
+
+.contact-info {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+hr {
+    margin-top: 8px;
+}
+
+h3 {
+    margin: 12px;
+}
+
+.summary {
+    text-align: center;
 }
 
 /*  Contact */
@@ -183,6 +231,48 @@ address {
     font-style: normal;
     font-size: 16px;
     margin-bottom: 4px;
+}
+
+/*  Modal   */
+
+#fpbtn {
+    overflow: auto;
+    z-index: 1;
+}
+
+#fpmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#fpmodal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*  Mobile  */
@@ -267,6 +357,12 @@ address {
     }
 
     .mobile-no-top {
+        margin-top: 4.5rem;
+    }
+
+    .resume-box {
+        width: 90%;
+        margin: 5%;
         margin-top: 4.5rem;
     }
 }

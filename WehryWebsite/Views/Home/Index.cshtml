@@ -11,29 +11,45 @@
 <div class="box mobile-no-top">
     <h2>Who am I?</h2>
     <img src="~/Content/img/PJProfile.png" class="profile-pic"/>
-    <p >ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    @Html.ActionLink("Learn more here >>", "Resume", "Home")
+    <p>I've lived in Orlando for two years with my wife and two sons <a id="fpbtn">Becky Sue, Finn, and S&oslash;ren.</a>
+    I pursued Christian ministry for the last ten years before transitioning and teaching myself to code over the last few months.
+     I'm looking for an entry position in software development.</p>
+    @Html.ActionLink("Learn more here >", "Resume", "Home")
+</div>
+
+<div id="fpmodal">
+    <div id="fpmodal-content">
+        <span id="close">&times;</span>
+        <img src="~/Content/img/PJIcar1.jpg" />
+    </div>
 </div>
 
 <div class="box">
     <h2>Resume</h2>
     <p>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and gives you full control over markup
-        for enjoyable, agile development.
+        Highlights: 
     </p>
-    @Html.ActionLink("See full resume here >>", "Resume", "Home")
+    <ul>
+        <li>C#</li>
+        <li>JavaScript</li>
+        <li>Bootstrap and Mobile Design</li>
+        <li>.NET Development</li>
+        <li>MVC Framework</li>
+        <li>Planned youth and young adult activities and retreats</li>
+        <li>Speaking and teaching experience</li>
+    </ul>
+    @Html.ActionLink("See full resume here >", "Resume", "Home")
 </div>
 
 <div class="box">
-    <h2>Portfolio</h2>
+    <h2>Current Work:</h2>
     <p>This website:</p>
     <ul>
         <li>Uses the .NET MVC framework</li>
         <li>Is mobile responsive</li>
         <li>Includes JavaScript functionality</li>
         <li>Uses Razor</li>
-        <li>@Html.ActionLink("This website on github >>", "Home", null, new { target = "_blank" })</li>
-        <li>@Html.ActionLink("See more of my work here >>", "Portfolio", "Home")</li>
+        <a href="https://github.com/sadmask/WehryWebsite/" target="_blank">See the website on GitHub ></a> <br />
+        @*@Html.ActionLink("See more of my work here >", "Portfolio", "Home")*@
     </ul>
 </div>
